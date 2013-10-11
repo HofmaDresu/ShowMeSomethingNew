@@ -7,7 +7,7 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ShowMeSomethingNewWebApp", 
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ShowMeSomethingNewWebAppTests", "ShowMeSomethingNew\ShowMeSomethingNewWebAppTests\ShowMeSomethingNewWebAppTests.fsproj", "{25102AF8-150F-4BA6-B519-E3FD5A70FC2C}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "DataGathering", "..\DataGathering\DataGathering.fsproj", "{863EBB2C-3946-4D1F-B01D-1202D6FF15DE}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "DataGathering", "DataGathering\DataGathering.fsproj", "{863EBB2C-3946-4D1F-B01D-1202D6FF15DE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
