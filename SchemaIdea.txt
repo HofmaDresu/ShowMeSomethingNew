@@ -1,7 +1,0 @@
-User{set of user names}
-[userName]:[resourceName]:visited{set of urls}
-Resource{set of resource names}
-Resource:[resourceName]{hash -> baseUrl, documentationSource, lastRefreshed}
-Resource:[resourceName]:links{set of urls}
-Resource:[resourceName]:[linkUrl]{hash-> url, title}
-Source{set of source locations (ex: msdn)}

@@ -1,9 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Express 2012 for Web
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShowMeSomethingNew", "ShowMeSomethingNew\ShowMeSomethingNew.csproj", "{A2735B40-7D27-4B44-94EA-12008607B07D}"
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShowMeSomethingNewWeb", "ShowMeSomethingNew\ShowMeSomethingNewWeb\ShowMeSomethingNewWeb.csproj", "{11715930-82D8-480C-8DDC-81057349F352}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data", "..\Data\Data.csproj", "{D1796573-99B6-4E5A-9606-D68550E133C7}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ShowMeSomethingNewWebApp", "ShowMeSomethingNew\ShowMeSomethingNewWebApp\ShowMeSomethingNewWebApp.fsproj", "{A126575F-C66E-42BF-A70F-655D4C3F0069}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ShowMeSomethingNewWebAppTests", "ShowMeSomethingNew\ShowMeSomethingNewWebAppTests\ShowMeSomethingNewWebAppTests.fsproj", "{25102AF8-150F-4BA6-B519-E3FD5A70FC2C}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "DataGathering", "..\DataGathering\DataGathering.fsproj", "{863EBB2C-3946-4D1F-B01D-1202D6FF15DE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,14 +15,22 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{A2735B40-7D27-4B44-94EA-12008607B07D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A2735B40-7D27-4B44-94EA-12008607B07D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A2735B40-7D27-4B44-94EA-12008607B07D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A2735B40-7D27-4B44-94EA-12008607B07D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D1796573-99B6-4E5A-9606-D68550E133C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D1796573-99B6-4E5A-9606-D68550E133C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D1796573-99B6-4E5A-9606-D68550E133C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D1796573-99B6-4E5A-9606-D68550E133C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11715930-82D8-480C-8DDC-81057349F352}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11715930-82D8-480C-8DDC-81057349F352}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11715930-82D8-480C-8DDC-81057349F352}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11715930-82D8-480C-8DDC-81057349F352}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A126575F-C66E-42BF-A70F-655D4C3F0069}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A126575F-C66E-42BF-A70F-655D4C3F0069}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A126575F-C66E-42BF-A70F-655D4C3F0069}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A126575F-C66E-42BF-A70F-655D4C3F0069}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25102AF8-150F-4BA6-B519-E3FD5A70FC2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25102AF8-150F-4BA6-B519-E3FD5A70FC2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25102AF8-150F-4BA6-B519-E3FD5A70FC2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25102AF8-150F-4BA6-B519-E3FD5A70FC2C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{863EBB2C-3946-4D1F-B01D-1202D6FF15DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{863EBB2C-3946-4D1F-B01D-1202D6FF15DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{863EBB2C-3946-4D1F-B01D-1202D6FF15DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{863EBB2C-3946-4D1F-B01D-1202D6FF15DE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
