@@ -49,7 +49,7 @@
     <Reference Include="System.Numerics" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="TechNet.fs" />
+    <Compile Include="Retriever.fs" />
     <None Include="Script.fsx" />
     <None Include="packages.config" />
   </ItemGroup>
