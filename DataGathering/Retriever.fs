@@ -20,7 +20,7 @@ module Retriever =
     let private StoreTOCSite(siteName: string, url: string, parentID: Nullable<int64>) =
         let newRecord = new dbSchema.ServiceTypes.TableOfContent(SiteName = siteName,
                                                                 URL = url,
-                                                                ParentSiteId = parentID)
+                                                                TopSiteId = parentID)
         db.TableOfContent.InsertOnSubmit(newRecord)
         db.DataContext.SubmitChanges()
         let getOne = query {
@@ -35,9 +35,9 @@ module Retriever =
             let toc = downloader.DownloadString(baseURI + relativeRootPage)
             let technetData = msdnSchema.Parse(toc)
             for datum in technetData do
-                let myParent = StoreTOCSite(datum.Title, baseURI + datum.Href, parentID)
+                StoreTOCSite(datum.Title, baseURI + datum.Href, parentID) |> ignore
                 if datum.ExtendedAttributes.DataTochassubtree then
-                    CollectTechNetSites(baseURI, datum.Href + "?toc=1", datum.Title, System.Nullable(myParent))
+                    CollectTechNetSites(baseURI, datum.Href + "?toc=1", datum.Title, parentID)
 
                     
     let CollectTechNetSite(baseURI: string, relativeRootPage: string, title: string) = 
