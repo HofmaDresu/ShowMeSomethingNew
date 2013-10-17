@@ -102,6 +102,7 @@
     <Compile Include="HomeController.fs" />
     <None Include="App.config" />
     <None Include="packages.config" />
+    <Compile Include="UserSitesController.fs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\DataGathering\DataGathering.fsproj">
