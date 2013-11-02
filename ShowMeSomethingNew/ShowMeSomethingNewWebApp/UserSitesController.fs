@@ -33,7 +33,15 @@ type UserSitesController() =
             skip (System.Random().Next(0, newPageCount))
             headOrDefault
         } 
-        let newVisit = new dbSchema.ServiceTypes.UserVisits(UserId = newPage.UserId, SiteId = newPage.SiteId)
-        Retriever.db.UserVisits.InsertOnSubmit(newVisit);
-        Retriever.db.DataContext.SubmitChanges();
-        newPage.SiteName
+        (newPage.SiteName, newPage.URL, newPage.SiteId)
+
+    member x.Put (userName:string, siteId:int64) =
+        let userId = query {
+            for u in Retriever.db.User do
+            where (u.UserName = userName)
+            select u.UserId
+            exactlyOne
+        }
+        let newVisit = new dbSchema.ServiceTypes.UserVisits(UserId = userId, SiteId = siteId)
+        Retriever.db.UserVisits.InsertOnSubmit(newVisit)
+        Retriever.db.DataContext.SubmitChanges()
