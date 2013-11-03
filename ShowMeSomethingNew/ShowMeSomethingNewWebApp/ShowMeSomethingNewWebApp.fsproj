@@ -103,6 +103,8 @@
     <None Include="App.config" />
     <None Include="packages.config" />
     <Compile Include="UserSitesController.fs" />
+    <Compile Include="SiteController.fs" />
+    <Compile Include="UserController.fs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\DataGathering\DataGathering.fsproj">
